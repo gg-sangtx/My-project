@@ -1,0 +1,191 @@
+.pdl input {
+    margin-left: 0px !important;
+    background:#ffffff;
+    border:0 solid rgba(68,68,68,0.47);
+    border-radius:3px;
+    width:23px;
+    height:23px;
+}
+
+.checkbox {
+    margin-top: 2px !important;
+    margin-bottom: 22px !important;
+}
+.login-img {
+    padding-top: 20px !important;
+}
+
+.checkbox-login {
+  position: relative;
+  label {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    border-radius: 3px;
+    border:1px solid rgba(68,68,68,0.47);
+    &:after {
+      content: '';
+      width: 13px;
+      height: 7px;
+      position: absolute;
+      top: 6px;
+      left: 4px;
+      border: 3px solid #333;
+      border-top: none;
+      border-right: none;
+      background: transparent;
+      opacity: 0;
+      transform: rotate(-45deg);
+    }
+  }
+  input[type=checkbox] {
+    opacity: 0;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    &:checked ~ label:after {
+      opacity: 1;
+    }
+  }
+}
+.pt-form-helper-text {
+  color: red;
+}
+.label-checkbox {
+  display: inline-block;
+  position: relative;
+  top: -10px;
+  left: 3px;
+}
+.login-box-body p {
+  text-align: center;
+}
+
+/*Cued in icon font login*/
+
+.title-user {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  line-height: 3;
+}
+.box-footer.border-info {
+  border-top: 0px !important;
+  border-bottom: 1px solid #f4f4f4;
+}
+.pdl-header-info {
+  padding-left: 27px;
+  margin-top: 0px;
+  padding-top: 20px;
+}
+.button-pw {
+  margin-top: 0px;
+  padding-bottom: 33px;
+  position: absolute;
+}
+.div-user-mg-bt {
+  margin-top: 49px !important;
+}
+.fieldname {
+  margin-top: 41px;
+}
+.pd-button-info {
+  padding: 10px;
+}
+.pd-button-info span button {
+  width: 162px;
+  height: 35px;
+  padding-top: 4px;
+}
+.pd-button-info span:last-child {
+  float: right;
+}
+.fa-save:before {
+  content: "\F0C7";
+  padding-right: 10px;
+}
+.fa-times:before {
+  content: "\F00D";
+  padding-right: 10px;
+}
+.fa-pencil:before {
+  content: "\F040";
+  padding-right: 10px;
+}
+.btn-primary.cancel {
+  background: #ccc !important;
+  border-color: #ccc !important;
+}
+.nav-tabs-custom > .nav-tabs > li.active {
+  border-top-color: #80ca0f !important;
+  font-weight: bold;
+}
+.nav-tabs-custom > .nav-tabs > li > a {
+  color: gray !important;
+  border-radius: 0;
+  font-weight: bold;
+  opacity: 1;
+}
+.nav-tabs-custom > .nav-tabs > li.active > a {
+  color: #444 !important;
+  border-radius: 0;
+  font-weight: bold;
+  opacity: 1;
+}
+.group-datepicker {
+  display: flex !important;
+  height: 34px;
+}
+.group-datepicker .input-group-addon {
+  display: block;
+  width: 34px;
+  height: 34px;
+  padding: 8px;
+}
+.react-datepicker__month-container,
+.react-datepicker__current-month {
+  width: 250px;
+  font-size: 13px;
+}
+.react-datepicker__day,
+.react-datepicker__day-name {
+  width: 25px;
+  height: 25px;
+  padding: 5px;
+  margin: 3px;
+}
+.input-datepicker {
+  width: calc(100% - 34px);
+}
+.react-datepicker-wrapper,
+.input-datepicker > div,
+.react-datepicker__input-container {
+  width: 100%;
+}
+.title-change-password {
+  font-size: 16px;
+  line-height: 3;
+}
+.form-lable.label-password {
+  color: #333;
+  font-weight: bold;
+  opacity: 1;
+}
+.p-header {
+  font-size: 30px;
+  padding-bottom: 15px;
+}
+.fl {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+.fl img {
+  max-width: 100%;
+}

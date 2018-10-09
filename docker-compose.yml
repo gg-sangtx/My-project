@@ -1,0 +1,30 @@
+version: "2"
+
+services:
+  site:
+    image: toancong/feup:node6
+    volumes:
+      - ./:/data/www/current
+# Just intall package then build without run this container
+    command: /bin/bash -c "yarn && yarn build"
+
+  nginx:
+    image: nginx:1.12
+    ports:
+      - 9021:8080
+    volumes:
+      - ./build:/usr/share/nginx/html
+    command:
+      - /bin/sh
+      - -c
+      - |
+          echo "
+            server {
+                listen 0.0.0.0:8080;
+                root /usr/share/nginx/html;
+                location / {
+                    try_files \$$uri \$$uri/ /index.html;
+                }
+            }
+          " > /etc/nginx/conf.d/site.conf
+          nginx -g 'daemon off;'

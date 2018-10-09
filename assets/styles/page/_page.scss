@@ -1,0 +1,157 @@
+$color_schedule: #6aa84f;
+.box-img-list {
+  width: 100%;
+  height: 95px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    display: block;
+    width: auto;
+    height: auto;
+  }
+}
+/*************** plans page *********************/
+.currency-input {
+  input {
+    border-radius: 0 5px 5px 0;
+  }
+}
+/*************** plans .end *********************/
+.box-border {
+  border: 1px solid #d2d6de;
+}
+.section-add {
+  position: relative;
+  .btn-remove-seaction {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 10px 15px;
+    min-width: 110px;
+  }
+}
+.input-datepicker {
+  position: relative;
+}
+.btn-clearDate {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  z-index: 2;
+}
+
+.select-category {
+  position: absolute;
+  top: 0;
+  right: 350px;
+  z-index: 2;
+}
+.choose-calendar {
+  position: relative;
+}
+.select-category-fix {
+  // position: relative;
+  float: right;
+  right: -15px;
+  margin-bottom: 0px !important;
+}
+.mb15.select-category-fix {
+  margin-bottom: 7px !important;
+  top: -50px;
+}
+.dropdown-center select, .dropdown-center option{
+  text-align-last:center;
+}
+.has-no-loading {
+  pointer-events: none;
+  background: #899fb3 !important;
+}
+.fix-mg-top.mt20 {
+  margin-top: 25px !important;
+}
+.choose-calendar-fix {
+  height: 859px;
+  min-height: 859px;
+  padding: 30px;
+  background-color: #fff;
+  border: 1px solid #d2d6de;
+  border-radius: 4px;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-top: 60px;
+  
+  .rbc-calendar {
+    width: 100%;
+    // height: 95% !important;
+    height: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+  .rbc-event {
+    background-color: transparent;
+    color: #3174ad;
+  }
+  .rbc-event-label {
+    display: none;
+  }
+}
+.btn-confirm.btn-danger {
+  background-color: #dd4b39;
+  border-color: #d73925;
+  &:hover {
+    background-color: #c52c19;
+    border-color: #c52c19;
+  }
+}
+.color-schedule-all .rbc-event, .color-schedule-all {
+  background: $color_schedule;
+  // display: block;
+  // color: #fff;
+  // padding: 3px;
+}
+.rbc-month-view .color-schedule-all .render-green {
+  color: #fff;
+}
+.ReactModal__Overlay.ReactModal__Overlay--after-open {
+  z-index: 2;
+}
+
+.wrap-collapse-content .date-time-range-picker .rdt {
+  padding: 0;
+}
+.box-group-date {
+  position: relative;
+}
+.btn-remove-date {
+  font-size: 18px;
+  z-index: 2;
+  position: absolute;
+  right: 9px;
+  line-height: 39px;
+  top: 0;
+  width: 20px;
+}
